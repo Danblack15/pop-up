@@ -1,0 +1,31 @@
+.button {
+	padding: 13px 24px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+	color: $whiteColor;
+	background: $purpleColor;
+	border-radius: 35px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px 0px rgb(161, 161, 161);
+	transition: .4s ease;
+
+	&:hover {
+		background: #9521cf;
+		box-shadow: 0px 3px 5px 3px rgb(161, 161, 161);
+		transform: scale(1.05);
+		transition: .4s ease;
+	}
+}
+
+.button-home {
+	font-size: 50px;
+	line-height: 100%;
+	transition: .3s;
+	padding: 20px 28px;
+
+	&:hover {
+		box-shadow: 0px 7px 5px 3px rgb(161, 161, 161);
+	}
+}

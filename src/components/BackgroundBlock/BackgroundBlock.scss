@@ -1,0 +1,30 @@
+.background {
+	position: relative;
+
+	&__back {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		width: 420px;
+		height: 150%;
+		background: $purpleColor;
+		transform: translateY(-50%) rotate(-15deg);
+	}
+
+	&__img {
+		width: 403px;
+		height: 900px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%) rotate(-30deg);
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& img {
+			transform: rotate(30deg) translateX(-15%);
+		}
+	}
+}
