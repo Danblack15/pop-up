@@ -1,15 +1,29 @@
 <template>
 	<div class="home">
-		<ButtonUI home>Open Pop-Up</ButtonUI>
-		<PopUp />
+		<ButtonUI home @click="openPopUp">Open Pop-Up</ButtonUI>
+		<PopUp v-if="showPopUp" />
 	</div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
+
 import PopUp from '@/components/PopUp/PopUp.vue';
 
 export default {
-    components: { PopUp }
+	components: { PopUp },
+
+	methods: {
+		...mapActions({
+			openPopUp: "data/toggleShowPopUp"
+		})
+	},
+
+	computed: {
+		...mapGetters({
+			showPopUp: 'data/getShowPopUp'
+		})
+	}
 }
 </script>
 

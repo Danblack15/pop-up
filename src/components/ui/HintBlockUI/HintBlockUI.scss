@@ -1,0 +1,41 @@
+.hint {
+	background: $greenColor;
+	color: $whiteColor;
+	padding: 8px 10px;
+	max-width: 350px;
+	text-align: center;
+	border-radius: 8px;
+
+	animation-name: hint;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transform: translateY(-50%) translateX(-50%);
+
+	@keyframes hint {
+		10% {
+			opacity: 1;
+			transform: translateY(0) translateX(-50%);
+		}
+
+		90% {
+			opacity: 1;
+			transform: translateY(0) translateX(-50%);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateY(0) translateX(-50%);
+		}
+	}
+
+	&--error {
+		background: $redColor;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 120%;
+	}
+}

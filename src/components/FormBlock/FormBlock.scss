@@ -93,5 +93,34 @@
 		line-height: 16px;
 		color: $grayColor;
 		transition: opacity .3s;
+
+		&--error {
+			animation-name: error-privacy;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes error-privacy {
+			20% {
+				transform: translateX(10%);
+			}
+
+			40% {
+				transform: translateX(0);
+			}
+
+			60% {
+				transform: translateX(10%);
+			}
+
+			80% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(0);
+			}
+		}
 	}
 }

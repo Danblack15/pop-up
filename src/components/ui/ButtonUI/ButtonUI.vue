@@ -1,7 +1,7 @@
 <template>
   <button :class="['button', {
-    'button-home': home
-  }]">
+      'button-home': home
+    }]">
     <slot></slot>
   </button>
 </template>
