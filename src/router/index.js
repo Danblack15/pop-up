@@ -3,7 +3,7 @@ import HomePage from '@/views/HomePage/HomePage'
 
 const routes = [
   {
-    path: '/pop-up',
+    path: '/',
     name: 'home',
     component: HomePage
   }
